@@ -1,7 +1,8 @@
 //: ## Game 5
+let noun5 = ""
+let noun6 = ""
 
-
-
+let sentence = "If you create a \(noun5) variable, it is final. Otherwise, a \(noun6) can be changed"
 //: [Previous](@previous)  |  page 7 of 7
 
 /*:

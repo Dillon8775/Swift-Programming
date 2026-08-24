@@ -39,15 +39,11 @@ startSimulation()
  - Experiment: 
  Try modifying these parameters, along with the others from previous pages, to change the foraging behavior of the colony.
  */
-//homePheromoneDepositRate = 100
-//foodPheromoneDepositRate = 100
-//homePheromoneEvaporationRate = 50
-//foodPheromoneEvaporationRate = 50
+let homePheromoneDepositRate: Double = 200
+let foodPheromoneDepositRate: Double = 200
+let homePheromoneEvaporationRate: Double = 100
+let foodPheromoneEvaporationRate: Double = 100
 
-//environmentCellSize = 10
-//numberOfAnts = 100
-
-//numberOfAnts = 20
-//antSpeed = 150
-
+let environmentCellSize = 10
+let numberOfAnts = 100
 //: [Previous](@previous)  |  page 5 of 6  |  [Next: Wrapping Up](@next)

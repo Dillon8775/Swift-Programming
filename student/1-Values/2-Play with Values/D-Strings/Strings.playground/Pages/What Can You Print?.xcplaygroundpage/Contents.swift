@@ -37,8 +37,8 @@ After:\
 `print(authorName)`
  */
 authorName
-"authorName"
-"Did you know that \(bookTitle) was written by \(authorName)?"
+print(authorName)
+print("Did you know that \(bookTitle) was written by \(authorName)?")
 /*:
   _Copyright © 2023 Apple Inc._
  

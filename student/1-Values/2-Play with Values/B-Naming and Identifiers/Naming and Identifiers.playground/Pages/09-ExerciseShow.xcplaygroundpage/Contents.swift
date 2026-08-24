@@ -26,8 +26,19 @@ Your friend is done with the pet show. With your help, it was a big success. Now
  - callout(Exercise): Using the code above as a reference, use `let` statements to define constants to better solve your friend’s problem.\
 Add your code below. To help you get started, the constant `numberOfTickets` is already defined.
  */
-let numberOfTickets = 150
+let numberOfTickets: Int = 150
 
+let ticketPrice: Int = 10
+
+let roomRentalFee: Int = 1000
+
+let posterCost: Int = 40
+
+let totalTicketValue: Int = numberOfTickets * ticketPrice
+
+let totalExenseses: Int = roomRentalFee + posterCost
+
+let totalIncomeOfShow: Int = (numberOfTickets * ticketPrice) - (roomRentalFee + posterCost)
 /*:
 [Previous](@previous)  |  page 10 of 14  |  [Next: Exercise: Lottery Tickets](@next)
  */

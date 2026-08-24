@@ -25,13 +25,16 @@ Concatenate your `fullName` and `likesYourPostMessage`.\
 Type each line of code below the relevant comment below.
  */
 // Declare a firstName constant
+var firstName = "Dillon"
 
 // Declare a lastName constant
+var lastName = "Strickland"
 
 // Combine the strings into a fullName constant
+var fullName = firstName + " " + lastName
 
 // Combine your full name with likesYourPostMessage
-
+let dillonLikedPost = fullName + " " + likesYourPostMessage
 /*:
 Next, find out how combining strings can get complicated.
 

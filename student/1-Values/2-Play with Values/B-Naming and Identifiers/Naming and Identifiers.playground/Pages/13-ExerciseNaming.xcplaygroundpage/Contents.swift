@@ -24,7 +24,34 @@ let rhso = oc - lhso
 
 
 //:  - Experiment: Rewrite the code so that it makes sense without needing a note. Use meaningful names and comments.
+// Number of Oranges
+let orangesCount = 14
 
+// Number of Watermelons
+let watermelonsCount = 3
+
+// Weight for Oranges
+let orangesWeight = 100
+
+// Weight for Watermelons
+let watermelonsWeight = 200
+
+// Total oranges weight
+let totalOrangesWeight = orangesCount * orangesWeight
+
+//  Total watermelons weight
+let totalWatermelonWeight = watermelonsCount * watermelonsWeight
+
+// Total weight
+let totalWeight = totalOrangesWeight + totalWatermelonWeight
+
+// Weight allowed per side (oranges)
+let weightPerSide = totalWeight / 2
+let orangesPalletsPerSide = weightPerSide / totalOrangesWeight
+
+// Weight allowed per side (watermelon)
+let waterMelonPalletsPerSide = watermelonsWeight
+let remainingOrangePallets = orangesWeight - orangesPalletsPerSide
 /*:
   _Copyright © 2023 Apple Inc._
  

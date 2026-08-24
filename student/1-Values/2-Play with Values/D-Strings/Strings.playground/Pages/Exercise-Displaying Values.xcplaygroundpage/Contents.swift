@@ -15,5 +15,12 @@
  
  _Hint:_ Do all of your calculations in megabytes.
  */
+var totalStorage: Int = 8000
+var usedStorage: Int = 3000
+let oneVideo: Int = 150
 
+let availableStorage = totalStorage - usedStorage
+let minutes = availableStorage / oneVideo
+
+print("You can record \(minutes) more minutes of video.")
 //: [Previous](@previous)  |  page 17 of 18  |  [Next: What Can You Print?](@next)

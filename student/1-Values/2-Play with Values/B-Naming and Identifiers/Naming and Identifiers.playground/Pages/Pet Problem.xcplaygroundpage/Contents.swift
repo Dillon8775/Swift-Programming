@@ -8,20 +8,22 @@ Now imagine that all you have with you is a laptop with Xcode on it. Maybe you c
 Using what you know so far, you could keep track of the count for each animal using a comment and a number, like this:
  */
 // Number Of Rabbits
-5
+let numberOfRabbits: Int = 6
 
 // Number Of Cats
-4
+let numberOfCats: Int = 5
 
 // Number Of Turtles
-3
+let numberOfTurtles: Int = 2
 
+// Number of Hamsters
+let numberOfHamsters: Int = 1
 //: Then you could copy those numbers onto new lines of code and let the playground do some math for you, like this:
-// Total Number Of Animals
-5 + 4 + 3
-
 // Total Number Of Mammals
-5 + 4
+let totalNumberOfMammals: Int = numberOfRabbits + numberOfCats
+
+// Total Number Of Animals
+let totalNumberOfAnimals: Int = totalNumberOfMammals + numberOfTurtles + numberOfHamsters
 /*:
  - Experiment: As the week goes on, you get more information about what pets will be in the show.\
 Change the code above to update the totals.

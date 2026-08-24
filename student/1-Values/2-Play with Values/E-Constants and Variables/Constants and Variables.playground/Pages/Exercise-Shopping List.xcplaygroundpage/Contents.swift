@@ -9,6 +9,14 @@ let cheese = "Cheese"
 let bread = "Bread"
 let rice = "Rice"
 let newLine = "\n"
+
+var shoppingList
+= ""
+shoppingList += newLine + eggs
+shoppingList += newLine + milk
+shoppingList += newLine + cheese
+shoppingList += newLine + bread
+shoppingList += newLine + rice
 //:  - callout(Exercise): Create a string variable with an initial value of `""`. Add each constant item above to the list, one at a time. Add a `newLine` between items. Remember you can join two strings using the `+` operator.
 /*:
 [Previous](@previous)  |  page 12 of 13  |  [Next: Exercise: 501](@next)

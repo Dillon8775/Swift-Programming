@@ -28,7 +28,8 @@
 
  - callout(Exercise): Try printing a few strings below.
  */
-
+print("My favorite movie is Avengers: Endgame")
+print("I like to workout at the gym")
 
 //: Move on to the next page to see how to put strings together.
 

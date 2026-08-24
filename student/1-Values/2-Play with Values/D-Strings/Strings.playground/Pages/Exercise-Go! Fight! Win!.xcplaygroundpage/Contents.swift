@@ -15,10 +15,10 @@
  - Note: 
  Use the show result button to view the results of your work.
  */
-let schoolName = "YOUR SCHOOL NAME"
-let refrain = "hmm hmm HMMM hm-hmm \(schoolName) hmm hmm HMMMMM"
+let schoolName = "Smackeo High School"
+let refrain = "hmm hmm HMMM hm-hmm \(schoolName) hmm hmm HMMMMM Yes let's go \(schoolName)!"
 
-let song = "\(refrain)\n\(refrain)\nYes, \(refrain)"
+let song = "\(refrain)\n\(refrain)\n\(refrain)\nYes, \(refrain)"
 
 
 

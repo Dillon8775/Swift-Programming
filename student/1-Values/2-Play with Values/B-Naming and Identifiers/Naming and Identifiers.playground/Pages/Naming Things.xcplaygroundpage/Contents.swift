@@ -8,13 +8,13 @@ In Swift, you can choose a name and associate it with a value by defining a _con
 
 Use the word `let` followed by a name to define a constant, and use the equal sign `=` to give a value to the constant:
  */
-let numberOfRabbits = 6
+let numberOfRabbits = 8
 
-let numberOfCats = 5
+let numberOfCats = 4
 
-let numberOfTurtles = 2
+let numberOfTurtles = 3
 
-let numberOfHamsters = 1
+let numberOfHamsters = 2
 //: After you’ve defined a constant and assigned a value to it, you can use the constant wherever you would have used the value, including in mathematical calculations that define the value of yet another constant:
  
 let totalNumberOfAnimals = numberOfRabbits + numberOfCats + numberOfTurtles + numberOfHamsters

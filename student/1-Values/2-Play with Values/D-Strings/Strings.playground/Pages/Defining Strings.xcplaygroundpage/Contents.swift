@@ -13,9 +13,10 @@ The declared string values also appear in the results sidebar. 👉
  - Experiment: Practice by declaring `favoriteMovie` and `favoriteSong` string constants for your favorite movie and song:
  */
 // Declare a favoriteMovie constant
+let favoriteMovie = "Avengers: Endgame"
 
 // Declare a favoriteSong constant
-
+let favoriteSong = "A Soulmate Who Wasn't Meant To Be"
 /*:
 Next, take a string-based trip around the world.
 

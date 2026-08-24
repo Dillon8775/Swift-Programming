@@ -7,7 +7,7 @@
 var score = 0
 
 // Take the current value of `score`, add 2, assign the result to `score` as its new value
-score = score + 2
+score += 2
 /*:
  This type of operation happens often enough that Swift has a special operator `+=`. This shorthand merges addition (`+`) and assignment (`=`) into one combined operation.
 
@@ -39,9 +39,15 @@ let space = " "
 
 var statement = ""
 statement += word1
+statement += space + word2
+statement += space + word3
+statement += space + word4 + "!"
 //:  Compound assignment works with all the mathematical operators, even the remainder operator. Use the `*=` operator to create the powers of two up to two to the 10th:
 var powerOfTwo = 1
-
+powerOfTwo *= 2 // 2
+powerOfTwo *= 2 // 4
+powerOfTwo *= 2 // 8
+powerOfTwo *= 2 // 16
 /*:
 [Previous](@previous)  |  page 5 of 13  |  [Next: Confusing Changes](@next)
  */
