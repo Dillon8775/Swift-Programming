@@ -7,8 +7,11 @@
  */
 makePlot()
 
+setXAxis(minimum: 0, maximum: 50)
+setYAxis(minimum: 0, maximum: 100)
 
-
+addPointAt(x: 5, y: 50, color: .blue)
+addPointAt(x: 10, y: 35, color: .red)
 /*:
 [Previous](@previous)  |  page 10 of 11  |  [Next: Wrapping Up](@next)
  */

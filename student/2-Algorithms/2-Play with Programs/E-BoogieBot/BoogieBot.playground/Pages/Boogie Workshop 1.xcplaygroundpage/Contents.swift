@@ -19,6 +19,15 @@
 startBot()
 startRecording()
 
+leftArmUp()
+jumpUp()
+jumpDown()
+
+
+fabulize()
+
+setBotTitle("Yes!")
+setBotSubtitle("You can't defeat me...")
 /*:
 Continue with your creativity.
 

@@ -5,12 +5,12 @@
  
  The function below has an unnecessary argument label. Remove the label so that the function is easier to read when it's called. Note that you'll still need the parameter name in order for the function's code to run.
  */
-func holler(phrase: String) -> String {
+func holler(_ phrase: String) -> String {
     return "⚡️\(phrase)!!⚡️"
 }
 
-holler(phrase: "Thank you, this is very nice.")
-holler(phrase: "I'm not sure that was necessary.")
+holler("Thank you, this is very nice.")
+holler("I'm not sure that was necessary.")
 /*:
   _Copyright © 2023 Apple Inc._
  

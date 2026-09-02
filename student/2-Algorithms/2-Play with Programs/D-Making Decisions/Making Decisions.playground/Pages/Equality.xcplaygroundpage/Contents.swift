@@ -31,7 +31,10 @@ let nineTimesTen = 9 * 10
 hundred == tenTimesTen
 hundred == nineTimesTen
 //:  - Experiment: Try some comparisons of your own. Can you check if two string values are equal?
+let woah: String = "woah"
+let woah2: String = "woah"
 
+woah == woah2
 /*:
 Find out more ways to compare values on the next page.
 

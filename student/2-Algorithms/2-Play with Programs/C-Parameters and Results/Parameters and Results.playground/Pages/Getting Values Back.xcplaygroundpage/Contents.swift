@@ -34,7 +34,9 @@ Recall that the definition of an *expression* is something that produces a value
 
  - callout(Exercise): Try making your own function that returns a value.
  */
-
+func randomNumber(min: Int, max: Int) -> Int {
+    return Int.random(in: min...max)
+}
 /*:
 [Previous](@previous)  |  page 6 of 18  |  [Next: Giving Values Back](@next)
  */

@@ -32,7 +32,7 @@
  */
 makeBarChart()
 
-addBar(withLength: 1, color: .yellow)
+addBar(withLength: 7, color: .yellow)
 addBar(withLength: 5, color: .green)
 addBar(withLength: 9, color: .red)
 addBar(withLength: 3, color: .purple)

@@ -8,6 +8,9 @@
 makePieChart()
 
 
-
+addWedge(withProportion: 0.27, color: .blue)
+addWedge(withProportion: 0.50, color: .red)
+addWedge(withProportion: 0.11, color: .purple)
+addWedge(withProportion: 0.12, color: .orange)
 //: [Previous](@previous)  |  page 4 of 11  |  [Next: Bar Charts](@next)
     

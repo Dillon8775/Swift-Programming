@@ -45,6 +45,7 @@ _**Hint**_: Try using the rules as pseudocode by making them into comments. Then
 _**Hint**_: Create constants that represent the three key conditions, and then compose a Boolean expression with those constants.
  */
 func isLeapYear2(_ year: Int) -> Bool {
+    return isLeapYear(year)
 }
 /*:
   _Copyright © 2023 Apple Inc._

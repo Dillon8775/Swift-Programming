@@ -5,7 +5,7 @@
  
  There is one last thing you can do with `if` and `else`. Here’s how it looks:
  */
-let videoLength = 120
+let videoLength = 500
 
 if videoLength < 5 {
     "If I blinked, I'd miss it."

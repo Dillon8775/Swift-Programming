@@ -8,7 +8,9 @@
  There’s another common type that can be inferred. You already know that whole numbers are inferred to be `Int` types, but if you type a number with a decimal point, it will be inferred to be a `Double` type.
  */
 let partNumber = 3.2
-let wholeNumber = 2
+let wholeNumber = 2.5
+
+print(partNumber + wholeNumber)
 /*:
  You can always find out which type Swift inferred by holding down Option and clicking the identifier:
 

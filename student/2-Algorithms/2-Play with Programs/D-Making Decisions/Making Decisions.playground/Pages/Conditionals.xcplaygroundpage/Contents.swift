@@ -10,9 +10,9 @@
  
  The code is similar to how you’d write it in prose:
  */
-let videoLength = 5
+let videoLength = 10
 
-if videoLength < 5 {
+if videoLength < 10 {
     "If I blinked, I'd miss it!"
 }
 

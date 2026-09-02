@@ -38,7 +38,7 @@ if grade >= 90 {
  
  "If a gig is more than 20 miles away, our manager needs to bring something for me to read. If it's less than five miles away, tell them I'll leave extra early to exercise and get some steps in. But if it's more than 100 miles away, I'm not really interested in playing—they should find a sub for me. Otherwise I'm super low maintenance."
  */
-let gigDistance = 6
+let gigDistance = 25
 
 if gigDistance > 20 {
     print("I need something to read.")

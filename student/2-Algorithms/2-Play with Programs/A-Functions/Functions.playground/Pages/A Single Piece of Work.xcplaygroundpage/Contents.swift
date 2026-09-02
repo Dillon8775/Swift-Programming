@@ -25,7 +25,11 @@ func rowTheBoat() {
  - callout(Exercise): Write your own function that prints something to the console, then call your new function. Pay attention to the example above so that you know where all the parentheses `()` and braces `{}` should go.
  What happens if you call your function more than once?
  */
+func printSomething() {
+    print("Something!")
+}
 
+printSomething()
 /*:
 Next, learn how to think about tasks and divide them up in a way that makes sense.
 

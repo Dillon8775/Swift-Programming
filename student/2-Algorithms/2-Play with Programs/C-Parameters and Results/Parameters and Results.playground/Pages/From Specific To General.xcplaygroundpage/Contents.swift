@@ -29,7 +29,8 @@ hello(name: "Maria")
 hello(name: "Vikram")
 
 //:  - Experiment: Call the function a few more times, passing in different arguments. Notice that the autocompletion pop up tells you that the function has a `String` parameter called `name`.
-
+hello(name: "hi")
+hello(name: "what")
 /*:
 Next get some practice by making your own function that takes an argument.
 

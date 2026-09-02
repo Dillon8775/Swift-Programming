@@ -7,8 +7,13 @@
  */
 makeBarChart()
 
+setYAxis(minimum: 0, maximum: 100)
 
+addBar(withLength: 50, color: .blue)
+addBar(withLength: 25, color: .red)
 
+addBarLabel("2018")
+addBarLabel("2019")
 /*:
 [Previous](@previous)  |  page 7 of 11  |  [Next: Plots](@next)
  */

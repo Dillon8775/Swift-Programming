@@ -8,11 +8,9 @@ let guess = "apple"
 
 if secretWord == guess {
     print("Your guess is right.")
-}
-if secretWord != guess {
+} else {
     print("Your guess is wrong.")
 }
-
 /*:
  - callout(Exercise): Rewrite the code above to use an else statement.
 

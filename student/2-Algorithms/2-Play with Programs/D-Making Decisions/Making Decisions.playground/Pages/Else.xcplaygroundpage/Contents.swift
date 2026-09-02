@@ -13,7 +13,7 @@ if videoLength < 5 {
     "If I blinked, I'd miss it."
 }
 //: What you really want is to be able to say “If the value is less than 5, do this; otherwise, do something else”. You can do that with the `else` keyword:
-if videoLength < 5 {
+if videoLength < 10 {
     "If I blinked, I'd miss it."
 } else {
     "That's lovely."

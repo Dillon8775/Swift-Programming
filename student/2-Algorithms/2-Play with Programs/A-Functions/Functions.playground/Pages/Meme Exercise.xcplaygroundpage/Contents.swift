@@ -9,7 +9,24 @@
  
  Write out the song or meme using `print` statements, then look for patterns and repetition, and choose groups of lines to combine into functions. This is a free-form exercise, so you can do whatever you like.
  */
+func verseOne() {
+    print("Sigma boy sigma boy")
+    print("You be sigmaing on that boy till it sigma?")
+}
 
+func verseTwo() {
+    print("That boy looks really sigma")
+    print("He should join the sigma club")
+}
+
+func verseThree() {
+    print("SIGMA BOY!!!")
+    verseOne()
+}
+
+verseOne()
+verseTwo()
+verseThree()
 /*:
 Next, make the meme your own.
 

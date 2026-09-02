@@ -14,7 +14,7 @@
  */
 makeBarChart()
 
-setYAxis(minimum: 0, maximum: 100)
+setYAxis(minimum: 0, maximum: 105)
 
 addBar(withLength: 60, color: .yellow)
 addBar(withLength: 83, color: .green)

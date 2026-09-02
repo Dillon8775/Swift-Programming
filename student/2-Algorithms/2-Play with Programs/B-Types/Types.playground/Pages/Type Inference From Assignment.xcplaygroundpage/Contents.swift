@@ -11,7 +11,7 @@
 
  The value on the right-hand side will have a type, because it already exists. `leftHandSide` will be inferred to have the same type.
  */
-let string = "42"
+let string = 42
 let anotherString = string
 /*:
  In this example, `string` is of type `String` because it is created from a literal. And `anotherString` is also of type `String`, because it is created from a `String`.
