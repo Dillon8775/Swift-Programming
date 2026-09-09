@@ -11,6 +11,12 @@ func responseTo(question: String) -> String {
         return "Why, hello there"
     } else if question.hasPrefix("where") {
         return "To the North!"
+    } else if question.hasPrefix("how") {
+        return "Because that's how science works!"
+    } else if (question.hasPrefix("what")) {
+        return "Hmm, I'm not sure. But I'll help ya figure it out!"
+    } else if question.hasPrefix("who") {
+        return "Maybe it's you!"
     } else {
         return "That really depends"
     }

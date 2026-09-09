@@ -21,10 +21,12 @@ func responseTo(question: String) -> String {
         return "To the North!"
     } else {
       
-        let defaultNumber = question.count % 2
+        let defaultNumber = question.count % 3
         
         if defaultNumber == 0 {
             return "That really depends"
+        } else if defaultNumber == 1 {
+            return "Well, the answer may change in a few days"
         } else {
             return "Ask me again tomorrow"
         }
