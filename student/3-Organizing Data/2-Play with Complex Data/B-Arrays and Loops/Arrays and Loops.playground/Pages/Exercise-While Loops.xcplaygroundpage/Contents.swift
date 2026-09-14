@@ -24,7 +24,17 @@ print("\(factorialNumberToCalculate)! = \(result)")
  \
  Use a Boolean variable to keep track of whether you've found a message and an index variable that you increment in the loop. Make sure to test your code with names that won't turn up any messages to account for potential bugs. (Your conditional will be a compound Boolean expression.)
  */
+let aliceMessages = ["What", "Okay", "Sure", "You"]
+var found = false
+var index = 0;
 
+while found == true {
+    let s = aliceMessages[index]
+    if (s.contains("What")) {
+        print("Index \(index) contains \"What!\"")
+    }
+    break
+}
 /*:
   _Copyright © 2023 Apple Inc._
  

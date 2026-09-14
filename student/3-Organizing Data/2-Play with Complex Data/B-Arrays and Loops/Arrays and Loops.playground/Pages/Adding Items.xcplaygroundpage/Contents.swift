@@ -13,7 +13,9 @@ list.insert("Kumquat", at: 0)
 //: You can append a whole array of items using the compound assignment operator `+=`:
 list += ["Strawberry", "Plum", "Watermelon"]
 //:  - Experiment: Practice adding items to the list using each of the three methods. Which do you prefer? When might you want to use each one?
-
+list.insert("This is the way to do it usually.", at: 5)
+list += ["This is the dumbest way to do it."]
+list.append("The end.")
 /*:
 All of these list methods are abstractions for a series of instructions for doing useful tasks, following Swift's syntax rules. Now, move on to find out how to remove items from an array.\
 [Previous](@previous)  |  page 9 of 18  |  [Next: Removing Items](@next)

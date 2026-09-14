@@ -1,5 +1,5 @@
 /*:
-## Read the Fine Manual
+ ## Read the Fine Manual
  
  The popover and the Quick Help inspector all get their information from the same source: the documentation supplied for that particular API.
  
@@ -19,5 +19,5 @@
  
  Next, learn about the two ways you will most often see types declared in the documentation.
 
-[Previous](@previous)  |  page 11 of 17  |  [Next: Classes and Structs](@next)
+ [Previous](@previous)  |  page 11 of 17  |  [Next: Classes and Structs](@next)
  */

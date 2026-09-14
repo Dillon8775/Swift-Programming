@@ -28,7 +28,8 @@ devices[0]
 
  - Experiment: Try to get the item at index `4` in the list. Open the console for more information about the error.
  */
-
+devices[4]
+devices[3]
 /*:
 Next find out how many values an array contains.\
 [Previous](@previous)  |  page 3 of 18  |  [Next: Count](@next)

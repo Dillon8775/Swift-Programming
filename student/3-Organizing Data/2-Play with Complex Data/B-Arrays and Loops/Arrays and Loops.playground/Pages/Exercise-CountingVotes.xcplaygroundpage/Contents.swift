@@ -20,14 +20,32 @@ This is also a lot of votes for Swift to use type inference to determine what ki
  
 //:  - callout(Exercise): Create two variables, one to count `yes` votes and one to count `no` votes. Each should start off with a value of zero.
 //:  - callout(Exercise): Create a `for…in` loop that iterates over one of the vote arrays and checks the value of each vote. If the vote is `true`, the loop should add one vote to the `yes` variable. If it's `false`, it should add one vote to the `no` variable.
+var yes = 0
+var no = 0
 
+func countVotes(_ votes: Array<Bool>) {
+    for answer in votes {
+        if (answer == true) {
+            yes += 1
+        } else {
+            no += 1
+        }
+    }
+}
+
+countVotes(shouldMascotChangeVotes)
 //:  - callout(Exercise): After the loop has finished, write an `if` statement that compares the two values and prints a different message based on whether the vote passed or failed.
-
+if (yes > no) {
+    print("Vote won!")
+} else {
+    print("Vote failed! :(")
+}
 /*:
  - callout(Exercise): Test your code by calling the `for…in` loop on each of the vote arrays.\
 Which measures won by popular vote?
  */
-
+countVotes(shouldHaveMorePollOptionsVotes)
+countVotes(shouldInstallCoffeeVendingMachineVotes)
 /*:
 ### Extension:
  Your `for…in` loop would be even more powerful if you could easily reuse it. The easiest way to reuse code is to put it in a function.
@@ -42,7 +60,24 @@ Which measures won by popular vote?
  `Should we change the mascot? 54 yes, 23 no`
  */
 // Add your vote-processing function here:
+func describe(forIssue: String, withVotes: Array<Bool>) {
+    for answer in withVotes {
+        if (answer == true) {
+            yes += 1
+        } else {
+            no += 1
+        }
+    }
+    
+    print(forIssue)
+    
+    if (yes > no) {
+        print("Vote won!")
+    } else {
+        print("Vote failed! :(")
+    }
 
+}
 /*:
 [Previous](@previous)  |  page 15 of 18  |  [Next: Exercise: Goals](@next)
  */

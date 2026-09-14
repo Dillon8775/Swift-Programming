@@ -16,7 +16,9 @@
 let example = "It was the best of times"
 // Practice here by typing . after "example":
 example
-
+example.isEmpty
+example.hasPrefix("a")
+example.hasSuffix("b")
 
 
 

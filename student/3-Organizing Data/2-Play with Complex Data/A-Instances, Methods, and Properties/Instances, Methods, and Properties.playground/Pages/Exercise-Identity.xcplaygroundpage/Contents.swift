@@ -12,21 +12,28 @@ Check the values of `myPlans` and `friendPlans`. Are they the same or different?
 // Create your variables here:
 
 // Update `myPlans` here:
-
+var myPlans = "Go to gym, do college work."
+var friendPlans = myPlans
+myPlans += " And then go to sleep."
 /*:
  - callout(Exercise): 
  Create a function `addDance` that takes a string, appends a phrase about dancing (like `"and then we dance!"` or `"but no dancing"`, according to your taste), and returns the new string.\
  Call the `addDance` function passing in `myPlans`, and assign the result to `friendPlans`.
  */
 // Define and call your function here:
+func addDance(_ str: String) -> String {
+    return str + " And then we dance!"
+}
 
+friendPlans = addDance(myPlans)
 /*:
  - callout(Exercise): 
  How do you expect `friendPlans` to change? How do you expect `myPlans` to change?\
  Print both instances to to find out.
  */
 // Check your guess by printing here:
-
+myPlans
+friendPlans
 /*:
   _Copyright © 2023 Apple Inc._
  

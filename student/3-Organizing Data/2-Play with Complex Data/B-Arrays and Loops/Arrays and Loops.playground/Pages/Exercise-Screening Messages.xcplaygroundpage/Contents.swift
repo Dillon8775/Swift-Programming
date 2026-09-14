@@ -5,8 +5,8 @@
  
  Try to print out the `austenMessages` array to see the whole list, but beware: It's large enough that it may cause your playground to run slowly.
  */
-austenMessages
-
+let austenMessages = ["Lizzy", "Jane", "Mary", "Lydia", "Kitty"]
+print(austenMessages)
 
 /*:
  You want to go through the messages and find any that contain Jane's name, along with the message number. Instead of reading all the text yourself, you decide to write more code to help.
@@ -28,7 +28,12 @@ for i in 0 ... colors.count - 1 {
  This process is called a *linear search*. Linear search is a common algorithm for processing arrays by examining its contents in order and evaluating each item to determine whether it meets certain criteria.
  */
 // Write the `for…in` loop here:
-
+for i in 0 ... austenMessages.count - 1 {
+    if austenMessages[i].contains("Jane") {
+        print("\(i): \(austenMessages[i])")
+        break
+    }
+}
 /*:
 [Previous](@previous)  |  page 17 of 18  |  [Next: Exercise: Partial Iteration](@next)
  */
