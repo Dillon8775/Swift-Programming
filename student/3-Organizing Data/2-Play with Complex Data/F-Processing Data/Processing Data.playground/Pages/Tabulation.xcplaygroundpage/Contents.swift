@@ -24,7 +24,10 @@ tabulator.incrementCount(forValue: "The Fourth Mission")
 
 print(tabulator.values)
 //:  - callout(Exercise): Write a loop that iterates through all the tabulated strings (in `tabulator.values`) and prints the count for each one.
-
+for i in 0 ... tabulator.values.count - 1 {
+    let tab: Int = tabulator.count(forValue: tabulator.values[i])
+    print(tab)
+}
 /*:
 [Previous](@previous)  |  page 2 of 11  |  [Next: Counting Shows](@next)
  */

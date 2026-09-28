@@ -6,11 +6,18 @@
  - callout(Exercise): Use the space below to tabulate the survey data and print the results. You can use the same technique you used the previous page.
  */
 // Create a Tabulator instance.
+let tab = Tabulator()
 
 // Loop through surveyData, incrementing the count for each response.
+for i in 0 ... surveyData.count - 1 {
+    tab.count(forValue: surveyData[i])
+}
 
 // Loop through the tallied shows (stored in tabulator.values), printing the information from each one.
-
+for i in 0 ... tab.values.count - 1 {
+    let show = tab.values[i]
+    print(show)
+}
 /*:
  If you look at the output, you can see that some users made errors in their responses. They're pretty easy to spot because each error value has a count of 1 in the tabulator. You want to provide the most accurate data to the Streaming Plus marketing team, so you should clean up these errors.
  

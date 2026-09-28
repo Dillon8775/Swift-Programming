@@ -18,7 +18,8 @@ func soundFor(animal: String) -> String {
     }
 }
 soundFor(animal: animal)
-
+soundFor(animal: "dog")
+soundFor(animal: "quack")
 /*:
  - callout(Exercise): Call the `soundFor(animal:)` function a few times. Pass in known animals and unknown animals.\
 \

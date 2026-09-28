@@ -45,6 +45,15 @@ enum Suit {
         }
     }
     
+    var emoji: String {
+        switch self {
+        case .spades: return "♠️"
+        case .diamonds: return "♦️"
+        case .hearts: return "❤️"
+        case .clubs: return "♣️"
+        }
+    }
+    
     func beats(_ otherSuit: Suit) -> Bool {
         return self.rank > otherSuit.rank
     }

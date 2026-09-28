@@ -8,9 +8,12 @@
  - callout(Exercise): Create a new catalog containing lowercased versions of all the shows.
  */
 // Make a new array variable.
+var v = [String()]
 
 // For all shows in showCatalog, add a lowercase version to the array.
-
+for i in 0 ... showCatalog.count - 1 {
+    v.append(showCatalog[i].lowercased())
+}
 //:  - callout(Exercise): Tabulate the survey data in a loop, making sure that you convert each value to lowercase before you increment the tabulator. As you did on the previous page, print the valid results, the errors, and the error count. Your code will be similar to the previous page, so feel free to copy it and paste it here as a starting point.
 print("\n\n***** SECOND CLEANING PASS *****\n\n")
 
@@ -18,10 +21,20 @@ print("\n\n***** SECOND CLEANING PASS *****\n\n")
 print("\n\n***** TABULATION FOR VALID DATA ******\n\n")
 
 // Create a Tabulator instance.
+var tab = Tabulator()
 
 // Loop through surveyData. Make a lowercase version of each value, then increment its count.
+for i in 0 ... surveyData.count - 1 {
+    let key = surveyData[i]
+    let value = surveyData[i].lowercased()
+    tab.incrementCount(forValue: value)
+}
 
 // Loop through all tabulator values. Print only those that are contained in the lowercase version of the show catalog.
+for i in 0 ... tab.values.count - 1 {
+    let key = tab.values[i]
+    print(key)
+}
 
 // Print a header
 print("\n\n***** DATA ERRORS ******\n\n")

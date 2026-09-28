@@ -42,7 +42,7 @@ class PennyBank {
  - callout(Experiment): Uncomment the line below to see an example of an illegal `UInt8` value.
  */
 var bank = PennyBank()
-//bank.deposit(pennies: 500)
+// bank.deposit(pennies: 500)
 /*:
  The console should print "`Integer literal '500' overflows when stored into 'UInt8'.`"
  
@@ -52,9 +52,9 @@ var bank = PennyBank()
  
  - callout(Experiment): Uncomment the lines below to see another example of overflow.
  */
-//bank.deposit(pennies: 100)
-//bank.deposit(pennies: 100)
-//bank.deposit(pennies: 100)
+bank.deposit(pennies: 100)
+bank.deposit(pennies: 100)
+// bank.deposit(pennies: 100)
 /*:
  This time, error in the console is harder to decipher. By first checking that the integer literal was a legal `UInt8` value, Swift could detect the error on line 45 before executing your code. But overflow can also occur when you reach the bank's limitations as your program executes. In that case, you'll see an "`EXC_BAD_INSTRUCTION`" error in the console. If you were debugging an app, the exact line of code that caused the overflow would be highlighted, so you'd quickly discover the issue.
  

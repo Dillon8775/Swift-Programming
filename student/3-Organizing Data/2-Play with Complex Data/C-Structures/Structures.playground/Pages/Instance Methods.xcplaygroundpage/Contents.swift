@@ -9,9 +9,9 @@ struct Rectangle {
     let width: Int
     let height: Int
     
-    func isBiggerThan(_ rectangle: Rectangle) -> Bool {
+    var isBiggerThan: Bool {
         let areaOne = width * height
-        let areaTwo = rectangle.width * rectangle.height
+        let areaTwo = width * height
         return areaOne > areaTwo
     }
 }
@@ -24,8 +24,8 @@ Just like the methods on built-in types, the methods you define are called using
 let rectangle = Rectangle(width: 10, height: 10)
 let otherRectangle = Rectangle(width: 10, height: 20)
 
-rectangle.isBiggerThan(otherRectangle)
-otherRectangle.isBiggerThan(rectangle)
+rectangle.isBiggerThan
+otherRectangle.isBiggerThan
 
 
 //:  - callout(Exercise): Simplify the `isBiggerThan` method by creating a computed property named `area` for the rectangle struct and then using the computed property inside the `isBiggerThan()` method.
@@ -35,8 +35,25 @@ struct Song {
     let title: String
     let artist: String
     let duration: Int
-
-    /* Code from page 6 here, plus the new method */
+    
+    var formattedDuration: String {
+        let minutes = duration / 60
+        // The modulus (%) operator gives the remainder
+        let seconds = duration % 60
+        return "\(minutes)m \(seconds)s"
+    }
+    
+    var formattedTitle: String {
+        return "\(title) by \(artist)"
+    }
+    
+    var songInformation: String {
+        return "\"\(title)\" by \(artist), duration is \(duration) seconds."
+    }
+    
+    func isLongerThan(_ song: Song) -> Bool {
+        return duration > song.duration
+    }
 }
 
 let songs = [
@@ -46,7 +63,15 @@ let songs = [
     Song(title: "Makin' up your mind", artist: "Boom!", duration: 440)
 ]
 
+var longestSong: Song = songs[0]
+for i in 0 ... songs.count - 1 {
+    let song: Song = songs[i]
+    if (song.isLongerThan(longestSong)) {
+        longestSong = song
+    }
+}
 
+print("The longest song is \(longestSong.formattedTitle)")
 /*:
  Instance methods are just like computed properties in the way they enable data abstraction.
  

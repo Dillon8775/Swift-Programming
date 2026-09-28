@@ -21,10 +21,19 @@ struct Song {
         return "\(minutes)m \(seconds)s"
     }
     
+    var formattedTitle: String {
+        return "\(title) by \(artist)"
+    }
+    
+    var songInformation: String {
+        return "\"\(title)\" by \(artist), duration is \(duration) seconds."
+    }
 }
 let song = Song(title: "No, no, no", artist: "Fizz", duration: 150)
 song.formattedDuration
+song.formattedTitle
 
+song.songInformation
 /*:
  You have already encountered a computed property: the `count` of an `Array`.
  

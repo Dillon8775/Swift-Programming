@@ -11,7 +11,6 @@ var bank = PennyBank()
 bank.deposit(pennies: 1)
 bank.balance()
 bank.withdraw(pennies: 1)
+bank.withdraw(pennies: 1)
 bank.balance()
-
-
 //: [Previous](@previous)  |  page 2 of 7  |  [Next: Limits of Integers](@next)

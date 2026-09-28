@@ -13,7 +13,7 @@
  - callout(Exercise): The `/// - Note:` lines are currently empty. Add information to each line that indicates its limitations.
  */
 /// Represents a bank that holds only pennies.
-/// - Note:
+/// Pennies can only range from 0-255. Going out of these bounds will result in a error.
 class PennyBank {
     private var pennies: UInt8 = 0
     
@@ -28,14 +28,14 @@ class PennyBank {
     
     /// Deposits pennies into the bank.
     /// - Parameter pennies: the number of pennies to deposit.
-    /// - Note:
+    /// - Cannot go over 255
     func deposit(pennies: UInt8) {
         self.pennies += pennies
     }
     
     /// Withdraws pennies from the bank.
     /// - Parameter pennies: the number of pennies to withdraw.
-    /// - Note:
+    /// - Cannot go below 0
     func withdraw(pennies: UInt8) {
         self.pennies -= pennies
     }

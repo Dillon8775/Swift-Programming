@@ -7,6 +7,7 @@
  */
  // Add your English-language description of the type here. Make sure to add // before each line of your comment description.
 
+// A car, with a color, year, and make.
 /*:
  - callout(Exercise): 
  Using the `struct` syntax from this lesson, create a type for your real-world object with the properties and methods you thought of. Remembering to mark each property with `let` or `var` depending on whether or not it will be allowed to change. If you're not sure how to implement the body of one of the methods, describe what the method should do in a comment.\
@@ -15,12 +16,16 @@
  > If you make a method that tries to change a property of your struct, you'll see the error "`Cannot assign to property: 'self' is immutable`." Structs have special rules about methods that try to change the values of their properties. To get rid of the error, use the keyword `mutating` in your method declaration, like so: `mutating func myMethodThatChangesAProperty()`
  */
 // Add your own struct here:
-
+struct Car {
+    let color: String
+    let year: Int
+    let make: String
+}
 /*:
  - callout(Exercise): 
  Use the struct you created to make a new instance of your type.
  */
-
+let car = Car(color: "Blue", year: 2023, make: "Toyota")
 //:  - Note: Here's an example of a placeholder type used for making a TrainingShoe:
 // Placeholder type
 struct Shoelaces {

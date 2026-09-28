@@ -8,19 +8,19 @@
  - callout(Exercise): 
  Complete the missing code to process the parallel arrays from the first page of the playground.
  */
-let songTitles = ["Ooh yeah", "Maybe", "No, no, no", "Makin' up your mind"]
-let artists = ["Brenda and the Del-chords", "Brenda and the Del-chords", "Fizz", "Boom!"]
-let durations = [90, 200, 150, 440]
-
-func songInformation(/* supply parameters here*/) -> String {
-    /* Return a string describing the song,
-     e.g. "\"Maybe\" by Brenda and the Del-chords, duration 200 seconds"
-     */
-}
-
-for i in 0 ... songTitles.count - 1 {
-    print(songInformation(title: songTitles[i], artist: artists[i], duration: durations[i]))
-}
+//let songTitles = ["Ooh yeah", "Maybe", "No, no, no", "Makin' up your mind"]
+//let artists = ["Brenda and the Del-chords", "Brenda and the Del-chords", "Fizz", "Boom!"]
+//let durations = [90, 200, 150, 440]
+//
+//func songInformation(/* supply parameters here*/) -> String {
+//    /* Return a string describing the song,
+//     e.g. "\"Maybe\" by Brenda and the Del-chords, duration 200 seconds"
+//     */
+//}
+//
+//for i in 0 ... songTitles.count - 1 {
+//    print(songInformation(title: songTitles[i], artist: artists[i], duration: durations[i]))
+//}
 /*:
  The code above is prone to all sorts of errors. What would happen if your song catalog expanded but you forgot to update one of the three arrays? What if you added star rating data with a new array but forgot to modify the `songInformation` function?
  
@@ -35,11 +35,26 @@ struct Song {
 }
 //:- callout(Exercise): Below, use the `Song` struct from the previous page to simplify your code.
 /* Create the array of songs here */
+let brendaAndTheDelChords: String = "Brenda and the Del-chores"
+let songs: [Song] = [
+    Song(title: "Ooh yeah", artist: brendaAndTheDelChords, duration: 90),
+    Song(title: "Maybe", artist: brendaAndTheDelChords, duration: 200),
+    Song(title: "No, no, no", artist: "Fizz", duration: 150),
+    Song(title: "Makin' up your mind", artist: "Boom!", duration: 440)
+]
 
 /* Declare the songInformation function here */
+func songInformation(_ song: Song) -> String {
+    return "\"\(song.title)\" by \(song.artist), duration is \(song.duration) seconds."
+}
 
 /* Write a for...in loop here */
-
+for i in 0 ... songs.count - 1 {
+    let song: Song = songs[i]
+    print(
+        songInformation(song)
+    )
+}
 /*:
  With the `Song` struct, you could add a star rating simply by adding a new property: `let starRating: Int`. Your initializers will automatically warn you that you're not passing enough arguments. Your `informationFor` function will be easy to modify. And you won't have to update your loop at all!
  

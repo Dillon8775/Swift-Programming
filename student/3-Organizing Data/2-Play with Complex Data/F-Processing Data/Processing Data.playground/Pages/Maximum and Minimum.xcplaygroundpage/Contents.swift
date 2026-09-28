@@ -16,9 +16,27 @@
  - callout(Exercise): Complete the two functions below to return the indices of the items with maximum and minimum counts in an array of `TabulatedValue`s. (Hint: You'll use the style of `for ... in` that counts counts a range of numbers from zero to the last index of the array: `for i in 0 ... tabulatedValues.count - 1`.)
  */
 func indexOfMaximum(from tabulatedValues: [TabulatedValue]) -> Int {
+    var max: Int = 0
+    for i in 0 ... tabulatedValues.count - 1 {
+        let tabulatedValue = tabulatedValues[i]
+        if tabulatedValue.count > tabulatedValues[max].count {
+            max = i
+        }
+    }
+    
+    return max
 }
 
 func indexOfMinimum(from tabulatedValues: [TabulatedValue]) -> Int {
+    var min: Int = Int.max
+    for i in 0 ... tabulatedValues.count - 1 {
+        let tabulatedValue = tabulatedValues[i]
+        if tabulatedValue.count < tabulatedValues[min].count {
+            min = i
+        }
+    }
+    
+    return min
 }
 /*:
  - callout(Exercise): Test your functions by printing out the most popular show and the least popular show. The tabulator for the survey results has already been created for you below.
