@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         updateUI(.start)
     }
     
-    // Updates the game UI
+    /// Updates the game UI
     func updateUI(_ gameState: GameState) {
         switch gameState {
         case .start:
@@ -47,12 +47,16 @@ class ViewController: UIViewController {
             rock.isEnabled = true
             paper.isEnabled = true
             scissors.isEnabled = true
+            view.backgroundColor = UIColor.white
         case .win:
             gameStatus.text = "You won!"
+            view.backgroundColor = UIColor.green
         case .lose:
             gameStatus.text = "You lost!"
+            view.backgroundColor = UIColor.red
         case .draw:
             gameStatus.text = "It's a draw!"
+            view.backgroundColor = UIColor.yellow
         }
     }
     
